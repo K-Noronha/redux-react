@@ -1,25 +1,42 @@
 import React from 'react';
-import logo from './logo.svg';
+import { BrowserRouter as Router, Route, Switch, Link, Redirect } from "react-router-dom"
 import './App.css';
+import ReReHome from './ReduxPgs/ReReHome';
+import ReHome from './ReactPgs/ReHome';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="App">
+        <h3>hELLOOO</h3>
+ 
+        <Link to="/">
+          <button>
+            <h2>Home</h2>
+          </button>
+        </Link>
+        <Link to="/react">
+          <button>
+            <h2>React</h2>
+          </button>
+        </Link>
+        <Link to="/redux-react">
+          <button>
+            <h2>React+Redux</h2>
+          </button>
+        </Link>
+        <p>----end of App-----</p>
+
+        <Switch>
+          <Route exact path="/redux-react" component={ReReHome} />
+          <Route exact path="/react" component={ReHome} />
+          <Redirect to="/"/>
+        </Switch>
+
+      </div>
+    </Router>
+
   );
 }
 
