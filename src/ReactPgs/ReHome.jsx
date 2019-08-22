@@ -43,7 +43,7 @@ export default class ReHome extends Component {
 
         return (
             <div className="homepage">
-                <h5>This is using React to manage state</h5>
+                <h5 className="homepage--state">This is using React to manage state</h5>
                 <div className="homepage--welcome">
                     <h1>Welcome</h1>
                     {this.state.user ? <h1>{this.state.user} !</h1> : null}

@@ -28,9 +28,11 @@ img {
     align-items: center;
     padding: 1vh 2.5vw;
     background: #3855c9;
+    background: #232b2b;
 
     &--title {
         text-align: right;
+        color: #fafafa;
     }
     
     h3 {
@@ -59,7 +61,9 @@ img {
     flex-direction: column;
     align-items: center;
 
-    h5 {
+    &--state {
+        color: #232b2b;
+        align-self: flex-end;
         font-weight: 500;
         margin: 5px 0 0;
     }
