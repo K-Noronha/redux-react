@@ -14,7 +14,7 @@ export default class ReUser extends Component {
     render() {
         return (
             <div className="user">
-                <h4>Your Name</h4>
+                <h4 className="user--title">Your Name</h4>
                 <form ref={this.userName} onSubmit={this.submitUserName}>
                     <input type="text" name="uName" placeholder="Enter Your Name" />
                     <button type="submit"><h3>Enter</h3></button>

@@ -10,7 +10,7 @@ export default function NavBar() {
                 </button>
             </Link>
 
-            <h3>States of Matter with State Management!</h3>
+            <h3 className="header--title">States of Matter with State Management!</h3>
         </header>
     )
 }
