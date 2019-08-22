@@ -6,18 +6,18 @@ export default class ReUser extends Component {
 
     submitUserName = (e) => {
         e.preventDefault()
-        const uName = (this.userName.current.uName.value).toUpperCase()
-        this.props.updateUser(uName+ " !") 
+        const uName = (this.userName.current.uName.value).toUpperCase() || null
+        this.props.updateUser(uName) 
         this.props.updateSection("")
     }
 
     render() {
         return (
-            <div>
-                <h2>Your Name</h2>
+            <div className="user">
+                <h4>Your Name</h4>
                 <form ref={this.userName} onSubmit={this.submitUserName}>
                     <input type="text" name="uName" placeholder="Enter Your Name" />
-                    <button type="submit">Enter!</button>
+                    <button type="submit"><h3>Enter</h3></button>
                 </form>
             </div>
         )

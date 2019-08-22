@@ -1,0 +1,141 @@
+button {
+    border-radius: 10px;
+    border-color: #3855c9;
+    padding: 0 20px;
+    background-color: aliceblue;
+    
+}
+
+img {
+    width: 150px;
+    height: 150px;
+}
+
+.App {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background-image: linear-gradient(#3855c9, aliceblue);
+
+}
+
+.header {
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1vh 0;
+    background: #3855c9;
+    
+    h3 {
+        margin: 10px 0;
+    }
+    
+}
+
+.app--homepage {
+    width: 60vw;
+    height: 75vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    button {
+        width: 350px;
+    }
+    h1{
+        font-size: 3rem;
+    }
+}
+
+.homepage{
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h5 {
+        font-weight: 500;
+        margin: 5px 0 0;
+    }
+
+    &--welcome{
+        display: flex;
+        h1 {
+            padding: 0 0.5rem;
+            margin: 15px 0;
+        }
+    }
+    
+    &--options{
+        width: 100%;
+        display: flex;
+        color: red;
+        justify-content: space-evenly;
+
+        button{
+            width: 110px;
+        }
+    }
+}
+
+.user {
+    width: 80%;
+
+    input {
+        border-radius: 10px;
+        padding: 10px 20px;
+        margin: 0 40px 0 100px;
+        width: 150px;
+        font-size: 1rem;
+    }
+
+    button {
+        h3 {
+            margin: 5px;
+        }
+    }
+}
+
+.stateCard {
+    border-radius: 10px;
+    border: solid 0.2rem #3855c9;
+    padding: 20px;
+    margin: 0 1rem;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 235px;
+    h2 {
+        margin: 0;
+    }
+    p {
+        text-align: center;
+    }
+}
+
+.all {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    &--card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.demo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &--buttons{
+        button{
+            width: 180px ;
+            margin: 30px 10px;
+        }
+    }
+}
