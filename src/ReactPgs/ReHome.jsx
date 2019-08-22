@@ -45,8 +45,8 @@ export default class ReHome extends Component {
             <div className="homepage">
                 <h5 className="homepage--state">This is using React to manage state</h5>
                 <div className="homepage--welcome">
-                    <h1>Welcome</h1>
-                    {this.state.user ? <h1>{this.state.user} !</h1> : null}
+                    <h1 className="homepage--welcome__text">Welcome</h1>
+                    {this.state.user ? <h1 className="homepage--welcome__name">{this.state.user}!</h1> : null}
                 </div>
 
 

@@ -5,7 +5,7 @@ const data = [
         matter: "Gas",
         type: "Steam",
         image: "steam.jpg",
-        desc: "Steam molecules are free to bounce wherever"
+        desc: "Molecules in steam are free to bounce wherever!"
 
     },
     {
@@ -13,7 +13,7 @@ const data = [
         matter: "Liquid",
         type: "Water",
         image: "water.jpg",
-        desc: "Water molecules have weak attraction forces"
+        desc: "Molecules in water have weak attraction forces!"
 
     },
     {
@@ -21,7 +21,7 @@ const data = [
         matter: "Solid",
         type: "Ice",
         image: "ice.jpg",
-        desc: "Ice molecules have strong attraction forces"
+        desc: "Molecules in ice are tightly packed!"
 
     }
 ]
