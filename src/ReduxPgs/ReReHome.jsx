@@ -14,7 +14,7 @@ export default function ReReHome() {
     let section = () => {
         switch (sectionState) {
             case "all": return <ReReAll data={data} />
-            case "demo": return <ReReDemo />
+            case "demo": return <ReReDemo data={data} />
             case "user": return <ReReUser />
             default: return null;
         }
